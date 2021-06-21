@@ -11,11 +11,11 @@ public class TransformTest1_Base {
         // 从文件读取数据
         DataStream<String> inputStream = env.readTextFile("D:\\ideaworkspace\\FlinkTutorial\\src\\main\\resources\\sensor");
 
-        // 把string转换成长度输出
-        DataStream<Integer> mapStream = inputStream.map()
-
-        // 执行
-        env.execute();
+//        // 把string转换成长度输出
+//        DataStream<Integer> mapStream = inputStream.map()
+//
+//        // 执行
+//        env.execute();
     }
 
 }
