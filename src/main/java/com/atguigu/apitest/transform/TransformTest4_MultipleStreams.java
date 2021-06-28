@@ -53,7 +53,7 @@ public class TransformTest4_MultipleStreams {
         });
 
         ConnectedStreams<Tuple2<String, Double>, SensorReading> connectedStreams = warningStream.connect(lowTempStream);
-        SingleOutputStreamOperator<Object> resultStream = connectedStreams.map(new CoMapFunction<Tuple2<String, Double>, SensorReading, Object>() {
+        DataStream<Object> resultStream = connectedStreams.map(new CoMapFunction<Tuple2<String, Double>, SensorReading, Object>() {
             public Object map1(Tuple2<String, Double> value) throws Exception {
                 return new Tuple3<String, Double, String>(value.f0, value.f1, "high temp warning");
             }
@@ -64,6 +64,9 @@ public class TransformTest4_MultipleStreams {
         });
 
         resultStream.print();
+
+        // 3、union联合多条流
+        highTempStream.union(lowTempStream, allTempStream);
 
         env.execute();
     }
