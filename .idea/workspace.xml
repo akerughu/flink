@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2864bf4-baa7-4fa9-a233-efb1b7e1c070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest5_RichFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/sink/SinkTest1_Kafka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest6_Partition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest4_MultipleStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest4_MultipleStreams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +67,26 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.TransformTest5_RichFunction">
-    <configuration name="TransformTest1_Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest1_Base" />
+  <component name="RunManager" selected="Application.SinkTest1_Kafka">
+    <configuration name="SinkTest1_Kafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.sink.SinkTest1_Kafka" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
+          <option name="PATTERN" value="com.atguigu.apitest.sink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourceTest3_Kafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.source.SourceTest3_Kafka" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,32 +96,6 @@
     </configuration>
     <configuration name="TransformTest2_RollingAggregation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest2_RollingAggregation" />
-      <module name="FlinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransformTest3_Reduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest3_Reduce" />
-      <module name="FlinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransformTest4_MultipleStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest4_MultipleStreams" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
@@ -133,20 +120,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransformTest6_Partition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest6_Partition" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.TransformTest1_Base" />
       <item itemvalue="Application.TransformTest2_RollingAggregation" />
-      <item itemvalue="Application.TransformTest3_Reduce" />
-      <item itemvalue="Application.TransformTest4_MultipleStreams" />
       <item itemvalue="Application.TransformTest5_RichFunction" />
+      <item itemvalue="Application.TransformTest6_Partition" />
+      <item itemvalue="Application.SinkTest1_Kafka" />
+      <item itemvalue="Application.SourceTest3_Kafka" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SinkTest1_Kafka" />
+        <item itemvalue="Application.SourceTest3_Kafka" />
+        <item itemvalue="Application.TransformTest6_Partition" />
         <item itemvalue="Application.TransformTest5_RichFunction" />
         <item itemvalue="Application.TransformTest2_RollingAggregation" />
-        <item itemvalue="Application.TransformTest4_MultipleStreams" />
-        <item itemvalue="Application.TransformTest3_Reduce" />
-        <item itemvalue="Application.TransformTest1_Base" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +195,9 @@
       <workItem from="1624285678472" duration="5625000" />
       <workItem from="1624372273221" duration="5839000" />
       <workItem from="1624459760785" duration="4240000" />
-      <workItem from="1624891879070" duration="2662000" />
+      <workItem from="1624891879070" duration="2783000" />
+      <workItem from="1624978061990" duration="4765000" />
+      <workItem from="1624984100999" duration="516000" />
     </task>
     <task id="LOCAL-00001" summary="flink">
       <created>1624288810759</created>
@@ -274,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624459946391</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="rich function">
+      <created>1624896306139</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1624896306139</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,29 +315,30 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="flink" />
     <MESSAGE value="rolling aggregation" />
-    <option name="LAST_COMMIT_MESSAGE" value="rolling aggregation" />
+    <MESSAGE value="rich function" />
+    <option name="LAST_COMMIT_MESSAGE" value="rich function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1624464255960">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1624464255960" />
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623077417511">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624983726180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1623077417511" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1624983726180" />
     <state x="519" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623167553325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1623167553325" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1624896066610">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1624981984403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1624896066610" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1624464496061">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1624981984403" />
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1624896305356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1624464496061" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1624896305356" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1624288750246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -341,22 +351,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1624288718829" />
-    <state width="1493" height="332" key="GridCell.Tab.0.bottom" timestamp="1624896287692">
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom" timestamp="1624984653859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624896287692" />
-    <state width="1493" height="332" key="GridCell.Tab.0.center" timestamp="1624896287692">
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624984653859" />
+    <state width="1493" height="268" key="GridCell.Tab.0.center" timestamp="1624984653859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624896287692" />
-    <state width="1493" height="332" key="GridCell.Tab.0.left" timestamp="1624896287692">
+    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624984653859" />
+    <state width="1493" height="268" key="GridCell.Tab.0.left" timestamp="1624984653859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624896287692" />
-    <state width="1493" height="332" key="GridCell.Tab.0.right" timestamp="1624896287692">
+    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624984653859" />
+    <state width="1493" height="268" key="GridCell.Tab.0.right" timestamp="1624984653859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624896287692" />
+    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624984653859" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1623169484853">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -377,18 +387,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1624378456817" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1624464609906">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1624896334198">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624464609906" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624896334198" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624372978521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1624372978521" />
-    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1624378819497">
+    <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1624982043701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1624378819497" />
+    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1624982043701" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1624893075234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
