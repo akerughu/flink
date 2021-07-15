@@ -19,6 +19,7 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 import org.apache.flink.util.Collector;
+import org.apache.flink.util.OutputTag;
 
 import java.util.Properties;
 
@@ -76,6 +77,19 @@ public class WindowTest1_TimeWindow {
                         out.collect(new Tuple3<String, Long, Integer>(id, windowEnd, count));
                     }
                 });
+
+        // 3、其他可选API
+
+        OutputTag<SensorReading> outputTag = new OutputTag<SensorReading>("late") {
+        };
+
+        SingleOutputStreamOperator<SensorReading> sumStream = dataStream.keyBy("id").timeWindow(Time.seconds(15))
+//                .trigger()
+//                .evictor()
+                .allowedLateness(Time.minutes(1))
+                .sideOutputLateData(outputTag)
+                .sum("temperature");
+        sumStream.getSideOutput(outputTag).print("late");
 
         resultStream2.print();
 
