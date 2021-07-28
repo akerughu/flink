@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2864bf4-baa7-4fa9-a233-efb1b7e1c070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest1_OperatorState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest2_KeyedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest1_TimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest1_TimeWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sensor" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sensor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sensor" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sensor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,9 +83,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.StateTest2_KeyedState">
-    <configuration name="StateTest1_OperatorState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.state.StateTest1_OperatorState" />
+  <component name="RunManager" selected="Application.StateTest3_KeyedStateApplicationCase">
+    <configuration name="StateTest2_KeyedState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.state.StateTest2_KeyedState" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
@@ -81,12 +97,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateTest2_KeyedState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.state.StateTest2_KeyedState" />
+    <configuration name="StateTest3_KeyedStateApplicationCase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.state.StateTest3_KeyedStateApplicationCase" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.apitest.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransformTest1_Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest1_Base" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransformTest2_RollingAggregation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.transform.TransformTest2_RollingAggregation" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,46 +149,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowTest2_CountWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.window.WindowTest2_CountWindow" />
-      <module name="FlinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.apitest.window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowTest3_EventTimeWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.window.WindowTest3_EventTimeWindow" />
-      <module name="FlinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.apitest.window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.WindowTest1_TimeWindow" />
-      <item itemvalue="Application.WindowTest2_CountWindow" />
-      <item itemvalue="Application.WindowTest3_EventTimeWindow" />
-      <item itemvalue="Application.StateTest1_OperatorState" />
       <item itemvalue="Application.StateTest2_KeyedState" />
+      <item itemvalue="Application.TransformTest1_Base" />
+      <item itemvalue="Application.TransformTest2_RollingAggregation" />
+      <item itemvalue="Application.WindowTest1_TimeWindow" />
+      <item itemvalue="Application.StateTest3_KeyedStateApplicationCase" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StateTest2_KeyedState" />
-        <item itemvalue="Application.StateTest1_OperatorState" />
-        <item itemvalue="Application.WindowTest3_EventTimeWindow" />
-        <item itemvalue="Application.WindowTest2_CountWindow" />
+        <item itemvalue="Application.StateTest3_KeyedStateApplicationCase" />
         <item itemvalue="Application.WindowTest1_TimeWindow" />
+        <item itemvalue="Application.TransformTest2_RollingAggregation" />
+        <item itemvalue="Application.StateTest2_KeyedState" />
+        <item itemvalue="Application.TransformTest1_Base" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +231,8 @@
       <workItem from="1626793396777" duration="3319000" />
       <workItem from="1626877242880" duration="7000" />
       <workItem from="1626877271915" duration="2630000" />
-      <workItem from="1626967201987" duration="2148000" />
+      <workItem from="1626967201987" duration="2553000" />
+      <workItem from="1627485097741" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="flink">
       <created>1624288810759</created>
@@ -350,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626797943388</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="键控状态，算子状态">
+      <created>1626969529194</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1626969529194</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +413,8 @@
     <MESSAGE value="timewindow" />
     <MESSAGE value="watermark" />
     <MESSAGE value="watermark offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="watermark offset" />
+    <MESSAGE value="键控状态，算子状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="键控状态，算子状态" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1624464255960">
@@ -404,14 +429,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1623167553325" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1626968504452">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1627489320079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1626968504452" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1626797942716">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1627489320079" />
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1626969528421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1626797942716" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1626969528421" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1627486624091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1627486624091" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1624288750246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -424,46 +453,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1624288718829" />
-    <state width="1478" height="136" key="GridCell.Tab.0.bottom" timestamp="1626969495759">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1627489591477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="136" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626969495759" />
-    <state width="1478" height="136" key="GridCell.Tab.0.center" timestamp="1626969495759">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627489591477" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1627489591477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="136" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1626969495759" />
-    <state width="1478" height="136" key="GridCell.Tab.0.left" timestamp="1626969495759">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627489591477" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1627489591477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="136" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1626969495759" />
-    <state width="1478" height="136" key="GridCell.Tab.0.right" timestamp="1626969495759">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627489591477" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1627489591477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="136" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1626969495759" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1623169484853">
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627489591477" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1627487503287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623169484853" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1623169484852">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627487503287" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1627487503287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1623169484852" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1623169484852">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1627487503287" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1627487503287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1623169484852" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1623169484852">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1627487503287" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1627487503287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623169484852" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1627487503287" />
+    <state x="553" y="123" key="RollbackChangesDialog" timestamp="1627486676786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1627486676786" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1625585354031">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1625585354031" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1626797948246">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1626969709992">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1626797948246" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1626969709992" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624372978521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

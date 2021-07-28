@@ -5,10 +5,13 @@ import org.apache.commons.collections.IteratorUtils;
 import org.apache.flink.api.common.functions.AggregateFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
+import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.api.java.tuple.Tuple;
+import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.windowing.WindowFunction;
@@ -68,9 +71,14 @@ public class WindowTest1_TimeWindow {
 //                .window(TumblingProcessingTimeWindows.of(Time.seconds(15)));
 
         // 2、全窗口函数
-        DataStream<Tuple3<String, Long, Integer>> resultStream2 = dataStream.keyBy("id").timeWindow(Time.seconds(15))
-                .apply(new WindowFunction<SensorReading, Tuple3<String, Long, Integer>, Tuple, TimeWindow>() {
-                    public void apply(Tuple tuple, TimeWindow timeWindow, Iterable<SensorReading> input, Collector<Tuple3<String, Long, Integer>> out) throws Exception {
+        KeyedStream<SensorReading, Tuple2<String, Double>> keyedStream = dataStream.keyBy(new KeySelector<SensorReading, Tuple2<String, Double>>() {
+            public Tuple2<String, Double> getKey(SensorReading sensorReading) throws Exception {
+                return Tuple2.of(sensorReading.getId(), sensorReading.getTemperature());
+            }
+        });
+        DataStream<Tuple3<String, Long, Integer>> resultStream2 = keyedStream.timeWindow(Time.seconds(15))
+                .apply(new WindowFunction<SensorReading, Tuple3<String, Long, Integer>, Tuple2<String, Double>, TimeWindow>() {
+                    public void apply(Tuple2<String, Double> tuple, TimeWindow timeWindow, Iterable<SensorReading> input, Collector<Tuple3<String, Long, Integer>> out) throws Exception {
                         String id = tuple.getField(0);
                         Long windowEnd = timeWindow.getEnd();
                         Integer count = IteratorUtils.toList(input.iterator()).size();
@@ -94,8 +102,8 @@ public class WindowTest1_TimeWindow {
         resultStream2.print();
 
         // 打印输出
-        dataStream.print();
-        resultStream.print();
+//        dataStream.print();
+//        resultStream.print();
 
         // 执行
         env.execute();
