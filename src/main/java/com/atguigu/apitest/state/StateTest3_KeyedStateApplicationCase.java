@@ -1,7 +1,6 @@
 package com.atguigu.apitest.state;
 
 import com.atguigu.apitest.beans.SensorReading;
-import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.functions.RichFlatMapFunction;
 import org.apache.flink.api.common.state.ValueState;
