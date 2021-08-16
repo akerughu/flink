@@ -18,12 +18,9 @@ public class TableTest1_Example {
         DataStreamSource<String> inputStream = env.readTextFile("D:\\ideaworkspace\\FlinkTutorial\\src\\main\\resources\\sensor");
 
         // 转换成SensorReading类型
-        DataStream<SensorReading> dataStream = inputStream.map(new MapFunction<String, SensorReading>() {
-            @Override
-            public SensorReading map(String s) throws Exception {
-                String[] fields = s.split(",");
-                return new SensorReading(fields[0], new Long(fields[1]), new Double(fields[2]));
-            }
+        DataStream<SensorReading> dataStream = inputStream.map((s) -> {
+            String[] fields = s.split(",");
+            return new SensorReading(fields[0], new Long(fields[1]), new Double(fields[2]));
         });
 
         // 3、创建表环境
