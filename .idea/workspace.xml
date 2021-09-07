@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2864bf4-baa7-4fa9-a233-efb1b7e1c070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +242,8 @@
       <workItem from="1629908723073" duration="699000" />
       <workItem from="1630245358805" duration="4382000" />
       <workItem from="1630511626873" duration="602000" />
-      <workItem from="1630851609294" duration="4175000" />
+      <workItem from="1630851609294" duration="4207000" />
+      <workItem from="1631030396217" duration="1454000" />
     </task>
     <task id="LOCAL-00001" summary="flink">
       <created>1624288810759</created>
@@ -433,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630250882883</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="group window">
+      <created>1630856570095</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1630856570095</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +488,8 @@
     <MESSAGE value="flink table api" />
     <MESSAGE value="flink table api 表的查询，输入输出" />
     <MESSAGE value="flink table api kafka append mode &amp; retract mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="flink table api kafka append mode &amp; retract mode" />
+    <MESSAGE value="group window" />
+    <option name="LAST_COMMIT_MESSAGE" value="group window" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1624464255960">
@@ -499,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628160520926" />
-    <state x="372" y="86" width="791" height="731" key="CommitChangelistDialog2" timestamp="1630250882100">
+    <state x="372" y="86" width="791" height="731" key="CommitChangelistDialog2" timestamp="1630856569327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="86" width="791" height="731" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1630250882100" />
+    <state x="372" y="86" width="791" height="731" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1630856569327" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1627486624091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -519,22 +528,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1624288718829" />
-    <state width="1493" height="295" key="GridCell.Tab.0.bottom" timestamp="1630856553897">
+    <state width="1493" height="295" key="GridCell.Tab.0.bottom" timestamp="1631032048902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="295" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1630856553897" />
-    <state width="1493" height="295" key="GridCell.Tab.0.center" timestamp="1630856553897">
+    <state width="1493" height="295" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631032048902" />
+    <state width="1493" height="295" key="GridCell.Tab.0.center" timestamp="1631032048902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="295" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1630856553897" />
-    <state width="1493" height="295" key="GridCell.Tab.0.left" timestamp="1630856553897">
+    <state width="1493" height="295" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631032048902" />
+    <state width="1493" height="295" key="GridCell.Tab.0.left" timestamp="1631032048902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="295" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1630856553897" />
-    <state width="1493" height="295" key="GridCell.Tab.0.right" timestamp="1630856553897">
+    <state width="1493" height="295" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631032048902" />
+    <state width="1493" height="295" key="GridCell.Tab.0.right" timestamp="1631032048902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="295" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1630856553897" />
+    <state width="1493" height="295" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631032048902" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1627489624322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -559,10 +568,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629041984029" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1630250888044">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1630856577224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1630250888044" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1630856577224" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628783086694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

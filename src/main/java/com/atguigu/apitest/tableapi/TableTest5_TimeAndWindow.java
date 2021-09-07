@@ -7,6 +7,7 @@ import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;
 import org.apache.flink.streaming.api.windowing.time.Time;
+import org.apache.flink.table.api.Over;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.Tumble;
 import org.apache.flink.table.api.java.StreamTableEnvironment;
@@ -52,10 +53,23 @@ public class TableTest5_TimeAndWindow {
         Table resultSqlTable = tableEnv.sqlQuery("select id,count(id) as cnt,avg(temp) as avgTemp,TUMBLE_END(rt,interval '10' second) " +
                 "from sensor group by id,TUMBLE(rt,interval '10' second)");
 
+
+        // 5.2 Over Window
+        // table API
+        Table overResult = dataTable.window(Over.partitionBy("id").orderBy("rt").preceding("2.rows").as("ow"))
+                .select("id, rt, id.count over ow, temp.avg over ow");
+
+        // Flink SQL
+        Table overSqlResult = tableEnv.sqlQuery("select id,rt,count(id) over ow,avg(temp) over ow from sensor window ow " +
+                "as (partition by id order by rt rows between 2 preceding and current row)");
+
 //        dataTable.printSchema();
 //        tableEnv.toAppendStream(dataTable, Row.class).print();
         tableEnv.toRetractStream(resultTable, Row.class).print("result");
 //        tableEnv.toRetractStream(resultSqlTable, Row.class).print("sql");
+
+        tableEnv.toRetractStream(overResult, Row.class).print("result");
+//        tableEnv.toRetractStream(overSqlResult, Row.class).print("sql");
 
         env.execute();
     }
